@@ -2,8 +2,8 @@
 
 An AI-powered campus navigation and crowd intelligence web app built for Delhi Technological University (DTU). It combines real-time geospatial tracking, graph-based pathfinding, and deep learning to solve a problem every large campus faces — students don't know where the crowd is, where to walk, or when the bus arrives.
 
-**Backend API:** `[add your Render backend link here]`
-**ML API:** `[add your Render ML link here]`
+**Backend API:** `[]`  
+**ML API:** `[]`  
 
 ---
 
