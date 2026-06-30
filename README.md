@@ -2,9 +2,6 @@
 
 An AI-powered campus navigation and crowd intelligence web app built for Delhi Technological University (DTU). It combines real-time geospatial tracking, graph-based pathfinding, and deep learning to solve a problem every large campus faces — students don't know where the crowd is, where to walk, or when the bus arrives.
 
-**Backend API:** `[]`  
-**ML API:** `[]`  
-
 ---
 
 ## The problem
@@ -41,7 +38,6 @@ SmartCampus Navigator gives students a live, interactive map of campus with thre
 | Auth | JWT, httpOnly cookies, bcrypt |
 | ML | Python, TensorFlow/Keras (LSTM), scikit-learn |
 | ML serving | FastAPI, Uvicorn |
-| Deployment | Render (backend + ML), Vercel (frontend) |
 
 ---
 
@@ -147,9 +143,9 @@ You'll also need a `.env` file in `server/` with `MONGO_URI`, `JWT_SECRET`, and 
 
 ---
 
-## What I'd build next
+## Scope of improvements  
 
-Real GPS-based crowd sensing instead of simulation, push notifications for crowd alerts, a recommendation engine for least-crowded study spots, and integration with DTU's actual class timetable to improve prediction accuracy.
+Real GPS-based crowd sensing instead of simulation, push notifications for crowd alerts, a recommendation engine for least-crowded study spots, integration with DTU's actual class timetable to improve prediction accuracy, and full production deployment.
 
 ---
 
