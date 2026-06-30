@@ -29,8 +29,24 @@ const Sidebar = ({ location, onClose, crowdCount = 0 }) => {
   const crowdText = crowdCount > 70 ? '#991b1b' : crowdCount > 40 ? '#92400e' : '#166534'
   const crowdLabel = crowdCount > 70 ? `High — ${crowdCount}% crowd` : crowdCount > 40 ? `Medium — ${crowdCount}% crowd` : `Low — ${crowdCount}% crowd`
 
+  const isMobile = window.innerWidth < 768
+
   return (
-    <div style={{ position: 'absolute', top: '80px', right: '10px', zIndex: 1000, background: 'white', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.15)', width: '260px', padding: '16px' }}>
+    <div style={{
+      position: 'absolute',
+      top: isMobile ? 'auto' : '80px',
+      bottom: isMobile ? '0' : 'auto',
+      right: isMobile ? '0' : '10px',
+      left: isMobile ? '0' : 'auto',
+      zIndex: 1000,
+      background: 'white',
+      borderRadius: isMobile ? '16px 16px 0 0' : '12px',
+      boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
+      width: isMobile ? '100%' : '260px',
+      maxHeight: isMobile ? '60vh' : 'auto',
+      overflowY: 'auto',
+      padding: '16px'
+    }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ fontSize: '28px' }}>{emoji}</span>
